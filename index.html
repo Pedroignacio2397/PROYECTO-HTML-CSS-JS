@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/ico" href="images/icon_page.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CRUD dinamico con HTMLS, CSS and JS">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:600&display=swap" rel="stylesheet">
+    <title>Crud JS</title>
+</head>
+<body>
+    <header class="header" id="header">
+	  
+	   <h1> Listar Trabajadores Online </h1>
+        <figure class="logo">
+          <img src="images/icon_page.png" height="60" alt="Logo de la pagina" />
+        </figure>
+          <nav class="menu">
+            <ol>
+              <li>
+                <a class="link" href="#footer">Acerca de</a>
+              </li>
+              <li>
+                <a class="link" href="#header">CRUD</a>
+              </li>
+            </ol>
+          </nav>
+      </header>
+    <br/>
+            <form onsubmit="event.preventDefault();onSubmit();" autocomplete="off">
+
+              <div class="caja">
+                <label for="rut">Rut</label> <input type="text" id="rut" placeholder="Escriba aqui" required>
+                <label for="nom">Nombre</label> <input type="text" id="nom" placeholder="Escriba aqui" required>
+                <label for="sex">Sexo</label> <input type="text" id="sex" placeholder="Escriba aqui" required>
+                <label for="car">Cargo</label> <input type="text" id="car" placeholder="Escriba aqui" required>
+              </div>
+              <br/>
+              <input class="submit" type="submit" value="Agregar">
+              </form>
+			 
+        <br/>
+        <br/>
+		         <div class="tablita">
+                <table class="tabla" id="tabla">
+                  <thead>
+                    <tr> 
+                      <th>Rut</th> 
+                      <th>Nombre</th>
+                      <th>Sexo</th>
+                      <th>Cargo</th>
+                    </tr>
+                  </thead>
+                    <tbody>
+      
+                    </tbody>
+                </table>
+              </div>
+			  <div id="subseccionDerecha2">
+		<h1></h1>
+			
+		</div>
+		<div id="subseccionDerecha1">
+			
+		</div>
+		<form action="usuario.html" method="post" id="formBotton">
+          <input class="submit" type="submit" value="Volver a inicio">
+      </form>
+		
+		<footer>
+		<div id="footer">
+		<p> &copy;2021-Listar Trabajadores</p>
+	</div>
+	</footer>
+  
+</body>
+<script type="text/javascript" src="js/crud.js"></script>
+</html>
